@@ -1,0 +1,12 @@
+The Alchemist|Paulo Coelho|111111|1988|4|general
+Little Prince|Antoine de Saint-Exupéry|222222|1943|2|children
+Harry Potter and the Philosopher's Stone|J.K. Rowling|9780747532743|1997|5|children
+The Hobbit|J.R.R. Tolkien|9780618968633|1937|3|children
+Python Crash Course|Eric Matthes|9781593279288|2019|4|general
+The Little Prince|Antoine de Saint-Exupéry|9780156012195|1943|2|children
+Clean Mind|Nabiorra D. Iasu|9780132350884|2008|3|general
+Charlotte's Web|E.B. White|9780061124952|1952|4|children
+1984|George Orwell|9780451524935|1949|2|general
+The Cat in the Hat|Dr. Seuss|9780394800011|1957|6|children
+Django Unleashed|Andrew Pinkham|9780133846973|2015|2|general
+Coding for Kids|Adrienne B. Tacke|9781641521751|2021|5|children

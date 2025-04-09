@@ -1,0 +1,227 @@
+/* General Body Styling */
+/*body {
+    background: linear-gradient(to bottom, #e0f7fa, #0288d1); /* Blue gradient */
+    /*color: #ffffff; /* White text for contrast */
+    /*font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* Navbar Styling */
+nav {
+    background-color: #0288d1; /* Blue background for navbar */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #0288d1;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+nav ul li a:hover {
+    background-color: #01579b;
+    color: #ffffff;
+}
+
+/* Heading Styles */
+h1, h2, h3 {
+    color: #0288d1; /* Blue color for headings */
+    text-align: center;
+}
+
+/* User Lists */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    background-color: #ffffff; /* White background for user list items */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling */
+button {
+    background-color: #0288d1; /* Blue button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #01579b; /* Darker blue on hover */
+}
+
+/* Back Link */
+a.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0288d1;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+a.back-link:hover {
+    background-color: #01579b;
+}
+
+/* Padding for content to make space for navbar */
+body {
+    padding-top: 60px; /* Prevent content from hiding behind the navbar */
+}
+
+
+/* === FORM STYLING === */
+
+form {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Input fields and selects */
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #0288d1;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    font-size: 16px;
+    color: #000000;
+}
+
+/* Submit button */
+button[type="submit"] {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #0288d1;
+    color: white;
+    font-size: 16px;
+    padding: 12px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #01579b;
+}
+
+
+.file-manager {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+    margin: 40px auto;
+}
+
+.file-manager form button {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    background-color: #0288d1;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.file-manager form button:hover {
+    background-color: #01579b;
+}
+
+.home-button {
+    display: inline-block;
+    background-color: #0288d1;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 20px auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #01579b;
+}
+
+.menu-button {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 14px;
+    background-color: #0288d1;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease;
+}
+
+.menu-button:hover {
+    background-color: #01579b;
+}

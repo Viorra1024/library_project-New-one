@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Library System</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+<h2>Register Student or Pupil</h2>
+<form method="post">
+  {% csrf_token %}
+  <label>User Type:</label><br>
+  <select name="user_type">
+    <option value="student">Student</option>
+    <option value="pupil">Pupil</option>
+  </select><br><br>
+
+  <label>User ID (5-digit number starting with 1 or 2):</label><br>
+  <input type="number" name="user_id" required><br><br>
+
+  <label>Name:</label><br>
+  <input type="text" name="name" required><br><br>
+
+  <label>Surname:</label><br>
+  <input type="text" name="surname" required><br><br>
+
+  <label>Group:</label><br>
+  <input type="text" name="group" required><br><br>
+
+  <div id="age_field" style="display:none;">
+    <label>Age (for pupils only):</label><br>
+    <input type="number" name="age"><br><br>
+  </div>
+
+  <button type="submit">Register</button>
+</form>
+
+<script>
+  const select = document.querySelector('[name="user_type"]');
+  const ageField = document.getElementById("age_field");
+
+  select.addEventListener("change", function () {
+    ageField.style.display = select.value === "pupil" ? "block" : "none";
+  });
+</script>
+
+{% if messages %}
+  <ul>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+  </ul>
+{% endif %}
+
+<a href="{% url 'home' %}">Back</a>
+
+</body>
+</html>

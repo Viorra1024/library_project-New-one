@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Library System</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+<h1>Library System</h1>
+<ul>
+    <li><a href="{% url 'register_user' %}" class="menu-button">🧑‍🎓 Register Student or Pupil</a></li>
+<li><a href="{% url 'add_book' %}" class="menu-button">📚 Add Book</a></li>
+<!-- <li><a href="{% url 'add_student' %}" class="menu-button">Add Student</a></li> -->
+<li><a href="{% url 'assign_book' %}" class="menu-button">📖 Assign Book</a></li>
+<li><a href="{% url 'return_book' %}" class="menu-button">↩️ Return Book</a></li>
+<li><a href="{% url 'all_books' %}" class="menu-button">📘 View All Books</a></li>
+<li><a href="{% url 'all_users' %}" class="menu-button">👥 View All Users</a></li>
+<!-- <li><a href="{% url 'all_students' %}" class="menu-button">View All Students</a></li> -->
+<li><a href="{% url 'file_manager' %}" class="menu-button">🗂️ File Manager</a></li>
+<li><a href="{% url 'check_user_type' %}" class="menu-button">🆔 Check User Type</a></li>
+
+</ul>
+</body>
+</html>

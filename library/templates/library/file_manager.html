@@ -1,0 +1,35 @@
+{% extends 'library/base.html' %}
+{% load static %}
+
+{% block title %}File Manager{% endblock %}
+
+{% block content %}
+<h1>📁 Library File Manager</h1>
+
+<div class="file-manager">
+  <form action="{% url 'export_books_txt' %}" method="post">
+    {% csrf_token %}
+    <button type="submit">📤 Export Books (.txt)</button>
+  </form>
+
+  <form action="{% url 'import_books_txt' %}" method="post">
+    {% csrf_token %}
+    <button type="submit">📥 Import Books (.txt)</button>
+  </form>
+
+  <form action="{% url 'serialize_library' %}" method="post">
+    {% csrf_token %}
+    <button type="submit">💾 Save Library (.pkl)</button>
+  </form>
+
+  <form action="{% url 'deserialize_library' %}" method="post">
+    {% csrf_token %}
+    <button type="submit">♻️ Load Library (.pkl)</button>
+  </form>
+
+  <form action="{% url 'drop_all_data' %}" method="post">
+    {% csrf_token %}
+    <button type="submit" style="background-color: crimson;">🧨 Delete All Data</button>
+  </form>
+</div>
+{% endblock %}
